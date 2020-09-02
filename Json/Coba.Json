@@ -1,0 +1,24 @@
+[
+  {
+    "Nama": "Nur Arifin",
+    "Umur": 20,
+    "nrp": "183112706450001",
+    "lulus": false,
+    "hobby": ["coding", "music"],
+    "Pembimbing": {
+      "pembimbing1": "sari ningsih",
+      "pembimbing2": "fauziah"
+    }
+  },
+  {
+    "Nama": "Tuyul",
+    "Umur": 21,
+    "nrp": "183112706450002",
+    "lulus": true,
+    "hobby": ["coding", "music"],
+    "Pembimbing": {
+      "pembimbing1": "Subekti",
+      "pembimbing2": "fauziah"
+    }
+  }
+]
