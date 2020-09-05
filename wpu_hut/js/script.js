@@ -1,3 +1,4 @@
+// memberikan function untuk data awal dan mem paketkan data tampilkanSemuaMenu agar di mudah di panggil
 function tampilkanSemuaMenu() {
   $.getJSON("data/pizza.json", function (data) {
     let menu = data.menu;
@@ -18,16 +19,19 @@ function tampilkanSemuaMenu() {
 }
 tampilkanSemuaMenu();
 
+//untuk dropdown perpindahan active
 $(".dropdown-item").on("click", function () {
   $(".dropdown-item").removeClass("active");
   $(this).addClass("active");
 
+  //merubah nama untuk ID tuyul/H1 pada latihan2.html
   let dropdown = $(this).html();
   // console.log(dropdown);
   $("#tuyul").html(dropdown);
 
+  //supaya di klik dropdown all menu ada isinya
   if (dropdown == 'All Menu') {
-
+    //memberika function unique supaya tidak ada data yang dulpicate
     $.getJSON("data/pizza.json", function (data) {
       var names = data.menu;
       var uniqueNames = [];
